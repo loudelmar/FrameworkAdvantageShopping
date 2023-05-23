@@ -20,4 +20,5 @@ public class Login extends SeleniumWrapper {
         clickear(btnContactar);
         reporte.reportarEvento("", true, false);
     }
+
 }
