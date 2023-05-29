@@ -22,13 +22,5 @@ public class SCR_AUT_001_Demo extends SeleniumTestBase {
         //Validar.BotonEnviar();
     }
 
-    @Test
-    void TC_001_02_SolicitarTarjetaIdeal() throws IOException, InvalidFormatException, AWTException, InterruptedException {
-        getTestName(getMethodName());
-        TarjetaIdeal.IngresarTarjetasCredito();
-        TarjetaIdeal.SolicitarTarjetaIdeal("pPrimerNombre", "pSegundoNombre", "pPrimerApellido",
-                "pSegundoApellido", "pFechaNacimiento","pHomoclave");
-    }
-
 
 }

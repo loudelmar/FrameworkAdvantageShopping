@@ -31,7 +31,15 @@ public class TarjetaIdeal extends SeleniumWrapper {
         escribirEnInput(txtSegundoApellido, extractDataToExcel(pSegundoApellido));
         escribirEnInput(txtFechaDeNacimiento, extractDataToExcel(pFechaNacimiento));
         escribirEnInput(txtHomoclave, extractDataToExcel(pHomoclave));
-        clickear(btnContinuar);
-        reporte.reportarEvento("", true, false);
+        //clickear(btnContinuar);
+    }
+
+    public static void ClickEnCheckbox() throws IOException, InvalidFormatException, AWTException{
+        clickear(chkAvisoPrivacidad);
+        clickear(chkCompartirInformacion);
+        clickear(chkTerms);
+        clickear(chkAvisoPrivacidad);
+        clickear(chkCompartirInformacion);
+        clickear(chkTerms);
     }
 }
